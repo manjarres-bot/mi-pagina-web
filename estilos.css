@@ -1,0 +1,44 @@
+*{
+   margin: 0;
+   padding: 0;
+    box-sizing: content-box;
+    }
+    body {
+        background: linear-gradient(rgba(0, 255, 94, 0.526), green);
+        margin: 40px;
+    }
+    
+    h1 {
+        text-align: center;
+        background: linear-gradient(to left,rgba(255, 251, 0, 0.505), orange);
+    }
+
+    .perfil{
+        max-width: 2000px;
+        border: 5px solid blue;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px red;
+    }
+    h2 {
+        color: red;
+    }
+    h3 {
+        color: beige;
+    }
+
+    input[type="text"], input[type="email"] {
+        min-width: 20%;
+        min-height: 40px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: 5px yellow;
+    }
+    input[type="text"]:hover, input [type="email"]:hover {
+        border: 2px blue;
+        box-shadow: 5px 5px 10px;
+    }
+    a:hover {
+        text-shadow: 2px 2px 5px orange;
+        color:red;
+    }
+    
