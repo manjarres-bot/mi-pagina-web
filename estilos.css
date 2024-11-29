@@ -1,11 +1,12 @@
-*{
+* {
    margin: 0;
    padding: 0;
     box-sizing: content-box;
     }
     body {
-        background: linear-gradient(rgba(0, 255, 94, 0.526), green);
-        margin: 40px;
+        background: linear-gradient(to left, rgba(0, 255, 94, 0.526), green);
+        margin: 10px;
+        min-height: 100vh;
     }
     
     h1 {
@@ -68,3 +69,80 @@
         text-align: left;
         padding: 8px;
     }
+
+    /*ESTILOS DE PRINCIPAL HTML*/
+    .header{
+        background: yellow;
+        text-align: center;
+        border-radius: 10px;
+        padding: 1rem;
+        grid-area: "header";
+    }
+    .nav{
+        background: blue;
+        text-align: center;
+        border-radius: 10px;
+        padding: 1rem;
+        color: white;
+        grid-area: "nav";
+    }
+    
+    .main{
+        background: pink;
+        text-align: center;
+        border-radius: 10px;
+        padding: 1rem;
+        grid-area: "main";
+    }
+    
+    .aside{
+        background: purple;
+        text-align: center;
+        border-radius: 10px;
+        padding: 1rem;
+        color: white;
+        grid-area: "aside";
+    }
+    
+    .footer{
+        background: green;
+        text-align: center;
+        border-radius: 10px;
+        padding: 1rem;
+        color: white;
+        grid-area: "footer";
+    }
+    
+
+    /*CSS GRIP*/
+     .page{
+        display: grid;
+        gap: 10px;
+        grid-template:
+        "header" 100px
+        "nav" 50px
+        "main" auto
+        "aside" 100px
+        "footer"50px;
+
+        @media (min-width: 768px){
+            grid-template:
+            "header  header  header  header  header " 100px
+            "nav         nav     nav " 50px
+            "main      main      aside " auto 
+            "footer    footer    footer" 50px /
+            auto auto 30%;
+        }
+
+        @media (min-width: 1024px){
+            grid-template:
+            "header  header  header  header  header" 100px
+            "nav     main     main    main   aside" auto
+            "footer  footer  footer   footer footer" 50px
+            / 20% auto auto auto 20%;
+        }
+     }
+
+
+    
+    
